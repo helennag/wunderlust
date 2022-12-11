@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
       <meta charset="UTF-8">
@@ -14,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="#">Destinations</a></li>
-                <li><a href="#">Inspirtations</a></li>
+                <li><a href="#">Inspirations</a></li>
                 <li><a href="#">Special</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
@@ -24,9 +25,9 @@
       <section>
         <h2>Majorca</h2>
         <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-        <img src="majorca-waves.png" alt="">
-        <img src="majorca-beach.png" alt="">
-        <img src="majorca-cove.png" alt="">
+        <img src="images/majorca-waves.png" alt="blue water crashing against rocks on left">
+        <img src="images/majorca-beach.png" alt="blue water surrounded by rock and sand beach">
+        <img src="images/majorca-cove.png" alt="blue water cove surrounded by rock, trees, and houses">
       </section>
 
       <section>
@@ -86,39 +87,39 @@
         <h3>Testimonials</h3>
         <section>
           <h4>Miranda Blake</h4>
-          <img src="miranda-blake.png" alt="circular headshot of blonde woman with sunglasses">
+          <img src="images/miranda-blake.png" alt="circular headshot of blonde woman with sunglasses">
           <dl>
             <dt>Traveling From: </dt>
             <dd>London, England</dd>
           </dl>
-          <q>“I traveled here for business, but my stay was extended. Now it is my home.”</q>
+          <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
         </section>
         <section>
           <h4>Max Winter</h4>
-          <img src="max-winter.png" alt="circular headshot of brown haired man with beard">
+          <img src="images/max-winter.png" alt="circular headshot of brown haired man with beard">
           <dl>
             <dt>Traveling From: </dt>
             <dd>Berlin, Germany</dd>
           </dl>
-          <q>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer.”</q>
+          <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
         </section>
         <section>
           <h4>Inés Villegos</h4>
-          <img src="ines-villegos.png" alt="circular headshot of woman wearing police vest">
+          <img src="images/ines-villegos.png" alt="circular headshot of woman wearing police vest">
           <dl>
             <dt>Traveling From: </dt>
             <dd>Barcelona, Spain</dd>
           </dl>
-          <q>“A very safe environment for all travelers.”</q>
+          <q>A very safe environment for all travelers.</q>
         </section>
         <section>
           <h4>Carmen Lorenzo</h4>
-          <img src="carmen-lorenzo.png" alt="circular headshot of brown curly haired woman">
+          <img src="images/carmen-lorenzo.png" alt="circular headshot of brown curly haired woman">
           <dl>
             <dt>Traveling From: </dt>
             <dd>Madrid, Spain</dd>
           </dl>
-          <q>“Live, laugh, love-- everything you need in Majorca.”</q>
+          <q>Live, laugh, love--everything you need in Majorca.</q>
         </section>
       </section>
 
@@ -181,21 +182,56 @@
       </section>
       <section>
         <h3>Contact Us</h3>
-          First Name (Enter first name)
-          Last Name (Enter last name)
+          <form>
+            <label for="firstName">First Name<span class="required">*</span></label>
+            <input type="text" name="firstName" id="firstName" autocomplete="name" placeholder="Enter first name" required>
+            <label for="lastName">Last Name<span class="required">*</span></label>
+            <input type="text" name="lastName" id="lastName" autocomplete="name" placeholder="Enter last name" required>
 
-          Contact Method (Email, Text, Phone)
-          Email Address (Enter Email)
-          Phone Number (Enter telephone number)
+            <fieldset>
+              <legend>Contact Method<span class="required">*</span></legend>
+              <input type="radio" name="contactMethod" id="contactEmail" required>
+              <label for="contactEmail">Email</label>
+              <input type="radio" name="contactMethod" id="contactText" required>
+              <label for="contactText">Text</label>
+              <input type="radio" name="contactMethod" id="contactPhone" required checked>
+              <label for="contactPhone">Phone</label>
+            </fieldset>
+            <label for="myEmail">Email<span class="required">*</span></label>
+            <input type="email" name="myEmail" id="myEmail" autocomplete="email" placeholder="Enter Email" required>
+            <label for="myPhone">Phone<span class="required">*</span></label>
+            <input type="tel" name="myPhone" id="myPhone" autocomplete="tel" placeholder="Enter telephone number" required>
 
-          Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-          Travel Time (Fall, Winter, Spring, Summer, Flexible)
+            <label for="destinations">Destination<span class="required">*</span></label>
+            <select name="destinations" id="destinations">
+              <option value="Barcelona">Barcelona</option>
+              <option value="Granada">Granada</option>
+              <option value="Ibiza">Ibiza</option>
+              <option value="Madrid">Madrid</option>
+              <option value="Majorca">Majorca</option>
+              <option value="Seville">Seville</option>
+              <option value="Tenerife">Tenerife</option>
+              <option value="Valencia">Valencia</option>
+            </select>
+
+            <label for="travelTime">Travel Time<span class="required">*</span></label>
+            <select name="travelTime" id="travelTime">
+              <option value="fall">Fall</option>
+              <option value="winter">Winter</option>
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </form>
+
       </section>
       </main>
       <footer>
-        <h4>Copyright 2021 Wunderlust</h4>
-        <p><a href="#">Privacy Statement</a></p>
-        <p><a href="#">Terms of Service</a></p>
+        <h3>Copyright 2021 Wunderlust</h3>
+        <ul>
+          <li><a href="#">Privacy Statement</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
       </footer>  
   </body>
 </html>
